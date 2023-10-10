@@ -12,11 +12,13 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));//Devuelve un paremt, parent es el elemento raiz
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("secondary-view.fxml"));//Devuelve un paremt, parent es el elemento raiz
         Parent p = fxmlLoader.load();//Saco la escena
-        Scene scene = new Scene(p, 320, 240);//Creamos la escena con ese contenido
+        Scene scene = new Scene(p, 270, 340);//Creamos la escena con ese contenido
         stage.setTitle("Hello!");
         stage.setScene(scene);
+        stage.setResizable(false);
+        //stage.setFullScreen(true);
         stage.show();
     }
 

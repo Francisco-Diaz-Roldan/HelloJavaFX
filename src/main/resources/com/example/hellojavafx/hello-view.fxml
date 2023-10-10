@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="TOP_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.hellojavafx.HelloController" style="-fx-background-color: blue; -fx-font-size: 60px;">
+<VBox alignment="TOP_LEFT" spacing="100.0" style="-fx-background-color: blue; -fx-font-size: 60px;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.hellojavafx.HelloController">
   <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    <Insets bottom="200.0" left="200.0" right="200.0" top="200.0" />
   </padding>
 
-  <Label fx:id="welcomeText">Mi primer label </Label>
-  <Button text="Hello!" onAction="#onHelloButtonClick" style="-fx-background-color: green"/>
-  <Button text="Hola a todos los de 2DAM" onAction="#saludar"/>
+  <Label fx:id="welcomeText" prefHeight="88.0" prefWidth="554.0" text="Mi primer label" wrapText="true">Mi primer label </Label>
+  <Button onAction="#onHelloButtonClick" style="-fx-background-color: green" text="Hello!" />
+  <Button onAction="#saludar" text="Hola a todos los de 2DAM" />
 </VBox>
